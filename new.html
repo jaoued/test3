@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>SNCF</title>
+		<link rel="stylesheet" href="index_sncf.css"  />
+	</head>
+
+	<body>
+		<div id="container">
+		
+			<header>
+				<figure>
+					<img src="img/logo.jpeg" alt="logo sncf" />
+				</figure>
+				<h1>Les trains de la sncf</h1>
+	
+				<form action="" method="post" class="connexion">
+					<fieldset>
+						<legend>CONNEXION</legend>
+						<table>
+						<tr><td><label>LOGIN </label></td><td><input type="text" name="connexion_login" required /></td></tr>
+						<tr><td><label>PASSWORD </label></td><td><input type="password" name="connexion_password" required /></td></tr>
+						<tr><td><input type="submit" value="connexion" name="connexion"/></td><td></td></tr>
+						
+						</table>
+					</fieldset>
+				</form>
+				
+						
+			</header>
+			
+			<div class='banner'>
+				<div class="slider">
+					<div class="slides">
+						<div class="slide"><img src="img/photo1.jpeg" alt="" /></div>
+						<div class="slide"><img src="img/photo2.jpeg" alt="" /></div>
+						<div class="slide"><img src="img/photo3.jpeg" alt="" /></div>
+						<div class="slide"><img src="img/photo4.jpeg" alt="" /></div>
+						<div class="slide"><img src="img/photo5.jpeg" alt="" /></div>
+					
+					</div>
+					
+					<div class='clear'></div>
+				</div>
+			</div>
+			
+			<section>
+				<div class="section1">
+					<h2>Menu</h2>
+					<ul>	
+						<li><a href="#vide"></a></li>
+						<li><a href="#horaires">horaires</a></li>
+						<li><a href="#inscription">inscription</a></li>
+						<li><a href="#tarifs">tarifs</a></li>
+						<li><a href="#contact">contact</a></li>
+						
+					</ul>
+				</div>
+			
+			
+				<div class="section2">
+					 <div id="vide"></div>
+					 <div id="horaires">
+							  <table border="2px">
+									<tr>
+										<th colspan="5"><center>Tableau des horaires des trains</center></th>
+									</tr>
+									<th>Train </th>
+									<th>Depart Ville</th>
+									<th>Arrivee Ville</th>
+									<th>Heure Depart</th>
+									<th>Heure Arrivée</th>
+									<tr>
+										<td>201244</td>
+										<td>Paris</td>
+										<td>Marseille</td>
+										<td>09h05</td>
+										<td>12h25</td>
+									</tr>
+								
+
+								</table>
+					 </div>
+					 
+					 <div id="tarifs">
+					 
+						<table border="2px">
+							<tr>
+								<td colspan="3"><center>TARIFS</center></td>
+							</tr>
+							<th>Type transport</th>
+							<th>Periode</th>
+							<th>Prix</th>
+							<tr>
+								<td>Carte Navigo</td>
+								<td>Mensuelle</td>
+								<td>75 E</td>
+							</tr>
+							<tr><td>Carte Navigo</td><td>Mensuelle</td>	<td>75 E</td></tr>
+							
+
+						</table>
+					 </div>
+		
+					
+					  <form action="" id="inscription">
+						<fieldset>
+							<legend>INSCRIPTION</legend>
+							<table>
+			
+								<tr>
+									<td> <label>NOM </label></td>
+									<td><input type="text" id="nom" name="nom" placeholder="Entrez Nom"/></td>
+								</tr>
+								<tr>
+									<td> <label>PRENOM </label></td>
+									<td><input type="text" id="prenom" name="prenom"  placeholder="Entrez prenom" /></td>
+								</tr>
+								<tr>
+									<td> <label>AGE </label></td>
+									<td><input type="number" id="age" name="age" placeholder="Entrez age" /></td>
+								</tr>
+								<tr>
+									<td> <label>MOT DE PASSE </label></td>
+									<td><input type="password" id="password" name="password"  placeholder="Entrez password"/></td>
+								</tr>
+								<tr>
+									<td> <label> CONFIRM MOT DE PASSE </label></td>
+									<td><input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Confirm password"/></td>
+								</tr>
+								<tr>
+									<td> <label>EMAIL </label></td>
+									<td><input type="email" id="email" name="email"  placeholder="Entrez email"/></td>
+								</tr>
+								<tr>
+									<td> <label>AVATAR </label></td>
+									<td><input type="file" id="avatar" name="avatar"  placeholder="Entrez avatar"/></td>
+								</tr>
+								<tr>
+									<td> <label>PROFIL SOUHAITE </label></td>
+									<td>
+										<select id="profil">
+										  <option value="grandVoyageur">Grand Voyageur</option> 
+										  <option value="jeune">Jeune</option>
+										  <option value="senior">Senior</option>
+										  <option value="militaire">Militaire</option>
+										  <option value="autre">Autre</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td> <label>DATE DE NAISSANCE </label></td>
+									<td><input type="date" id="dateNaissance" name="dateNaissance"  placeholder="Entrez dateNaissance"/></td>
+								</tr>
+								<tr>
+									<td> <label>CHOIX RENDEZ VOUS </label></td>
+									<td>
+										
+										<input type="month" id="month" name="month" />
+									</td>
+								</tr>
+								
+								<tr>
+									<td> <label>PORTABLE </label></td>
+									<td><input type="tel" id="tel" name="tel"  placeholder="Entrez votre telephone"/></td>
+								</tr>
+								
+								<tr>
+									<td> <label>VOTRE SITE </label></td>
+									<td><input type="url" id="site" name="site"  placeholder="Entrez site"/></td>
+								</tr>
+								
+								<tr>
+									<td>  </td>
+									<td> <br> </td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+											<input type='reset' value='Annuler' name='reset'>
+											<input name="valider" type="submit" value="Valider" />
+											<!--<input type="image" src="img/valider.jpg" width="25%" height="80px" alt="Envoyer le formulaire" />
+											<input type="image" src="img/valider.jpg" width="25%" height="80px" alt="Envoyer le formulaire" /> -->
+											
+											</td>
+								</tr>
+									
+									 
+								
+
+							  </table>
+						</fieldset>
+					</form>
+					
+					 <form action="" id="contact">
+						<fieldset>
+							<legend>CONTACT</legend>
+							<table>
+							<tr>	<td> <label>NOM </label></td>
+									<td><input type="text" id="nom" name="nom" placeholder="Entrez Nom"/></td>
+							</tr>
+							<tr>	<td> <label>PRENOM </label></td>
+									<td><input type="text" id="prenom" name="prenom"  placeholder="Entrez prenom" /></td>
+							</tr>
+							<tr>	<td> <label>PROFIL TYPE </label></td>
+									<td><select id="profil">
+									<option value="grandVoyageur">Grand Voyageur</option> 
+									<option value="jeune">Jeune</option>
+									<option value="senior">Senior</option>
+									<option value="militaire">Militaire</option>
+									<option value="autre">Autre</option>
+									</select></td>
+							</tr>
+							<tr>	<td> <label>MESSAGE  </label></td>
+									<td><textarea name="textarea" rows="3" cols="30"> Votre message...</textarea></td>
+							</tr>
+							
+							<tr>	<td></td>
+									<td><input name="valider" type="submit" value="Valider" /></td>
+							</tr>
+							</table>
+						</fieldset>
+										
+
+					</form>
+				</div>
+			
+				
+			</section>
+
+			<div class='clear'></div>
+			<footer>
+					<span>site de la sncf corpyright....<span>
+			</footer>
+		</div>
+	</body>
+	
+</html>
